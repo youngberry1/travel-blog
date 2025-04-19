@@ -74,6 +74,16 @@ time {
   font-style: italic;
 }
 
+figcaption {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  margin: auto;
+  font-style: italic;
+  font-weight: 700;
+  padding: 10px;
+}
+
 img {
   display: block;
   width: 50%;
