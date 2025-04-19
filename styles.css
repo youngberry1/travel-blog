@@ -109,8 +109,8 @@ img {
     color: white;
     background: rgb(0, 0, 0);
     max-width: 80%;
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    overflow: hidden;
   }
 
   header h1 {
@@ -130,8 +130,8 @@ img {
     font-size: 0.8rem;
     color: white;
     margin: auto auto 5px auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    overflow: hidden;
   }
 
   footer div {
