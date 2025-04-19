@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  padding: 0px;
+  padding: 0;
   text-align: center;
   display: block;
   background: linear-gradient(to right, #6a11cb, #2575fc);
@@ -26,8 +26,8 @@ header h1 {
   font-size: 2.8rem;
   font-weight: 700;
   color: #fff;
-  padding-top: 0px;
-  margin-top: 0px;
+  margin: 0;
+  padding-top: 0;
 }
 
 header h2 {
@@ -49,23 +49,22 @@ article {
   text-align: left;
 }
 
-footer small {
+article img {
   display: block;
-  text-align: center;
-  padding: 20px;
-  background-color: #5c2121;
-  border-top: 1px solid #eaeaea;
-  font-size: 0.9rem;
-  color: #ffffff;
-  margin: auto auto 0px auto;
-  max-width: 800px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(246, 2, 2, 0.362);
-  text-shadow: rgb(30, 4, 4) -5px -2px 2px;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px auto;
 }
 
-footer {
-  margin: auto auto 5px auto;
+figcaption {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+  padding: 10px;
 }
 
 time {
@@ -74,55 +73,33 @@ time {
   font-style: italic;
 }
 
-figcaption {
-  font-size: 0.85rem;
-  color: #666;
-  text-align: center;
-  margin: auto;
-  font-style: italic;
-  font-weight: 700;
-  padding: 10px;
+footer {
+  margin: auto auto 5px auto;
+  max-width: 800px;
 }
 
-article img {
+footer small {
   display: block;
-  width: 50%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin: 20px 0;
-  margin: auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #5c2121;
+  border-top: 1px solid #eaeaea;
+  font-size: 0.9rem;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(246, 2, 2, 0.362);
+  text-shadow: rgb(30, 4, 4) -5px -2px 2px;
 }
 
 /* Responsive Design for Mobile Devices */
-/* Media Query for Max Screen Width of 600px */
-
 @media (max-width: 600px) {
-
-
-  figcaption {
-    font-size: 0.85rem;
-    color: #666;
-    text-align: center;
-    margin: auto;
-    font-style: italic;
-    font-weight: 700;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+  html {
+    background: white;
   }
 
-
-  @media (max-width: 600px) {
-    header h1 {
-      font-size: 2rem;
-      color: black;
-    }
-
-    header h2 {
-      font-size: 1rem;
-      color: black;
-    }
+  html {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background-size: 200% 200%;
   }
 
   header {
@@ -131,18 +108,9 @@ article img {
     margin: auto;
   }
 
-  article {
-    font-size: 1rem;
-    color: white;
-    max-width: 80%;
-    display: block;
-    overflow: hidden;
-    background: rgb(
-      0,
-      0,
-      0
-    );
-    color: white;
+  header h1,
+  header h2 {
+    color: black;
   }
 
   header h1 {
@@ -154,7 +122,25 @@ article img {
   }
 
   article {
-    font-size: 0.9rem;
+    background: #000;
+    color: white;
+    max-width: 80%;
+    font-size: 1rem;
+    display: block;
+    overflow: hidden;
+  }
+
+  article img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px auto;
+  }
+
+  figcaption {
+    display: flex;
+    justify-content: center;
   }
 
   footer {
@@ -177,16 +163,8 @@ article img {
     text-shadow: rgb(4, 30, 19) -5px -2px 2px;
   }
 
-  article img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 20px auto;
-  }
-
   main {
-    padding: 10px 10px 0px;
+    padding: 10px 10px 0 10px;
+  }
 }
-
-/* End Of Media Query for Max Screen Width of 600px */
+/* End of Mobile Styles */
