@@ -47,7 +47,6 @@ article {
   font-size: 1.2rem;
   color: #333;
   text-align: left;
-  height: ;
 }
 
 footer small {
@@ -85,7 +84,7 @@ figcaption {
   padding: 10px;
 }
 
-img {
+article img {
   display: block;
   width: 50%;
   max-width: 100%;
@@ -99,14 +98,31 @@ img {
 /* Media Query for Max Screen Width of 600px */
 
 @media (max-width: 600px) {
-  header h1 {
-    font-size: 2.5rem;
-    color: black;
+
+
+  figcaption {
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+    margin: auto;
+    font-style: italic;
+    font-weight: 700;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
   }
 
-  header h2 {
-    font-size: 1.2rem;
-    color: black;
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+      color: black;
+    }
+
+    header h2 {
+      font-size: 1rem;
+      color: black;
+    }
   }
 
   header {
@@ -118,10 +134,15 @@ img {
   article {
     font-size: 1rem;
     color: white;
-    background: rgb(0, 0, 0);
     max-width: 80%;
     display: block;
     overflow: hidden;
+    background: rgb(
+      0,
+      0,
+      0
+    );
+    color: white;
   }
 
   header h1 {
@@ -149,7 +170,7 @@ img {
     background-color: green;
     font-size: 0.8rem;
     color: white;
-    margin: auto auto 5px auto;
+    margin: 10px auto 5px auto;
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(2, 246, 144, 0.362);
@@ -163,6 +184,9 @@ img {
     border-radius: 8px;
     margin: 20px auto;
   }
+
+  main {
+    padding: 10px 10px 0px;
 }
 
 /* End Of Media Query for Max Screen Width of 600px */
