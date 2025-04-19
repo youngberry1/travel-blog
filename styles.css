@@ -50,7 +50,8 @@ article {
   height: ;
 }
 
-footer div {
+footer small {
+  display: block;
   text-align: center;
   padding: 20px;
   background-color: #5c2121;
@@ -144,7 +145,7 @@ img {
     overflow: hidden;
   }
 
-  footer div {
+  footer small {
     background-color: green;
     font-size: 0.8rem;
     color: white;
