@@ -94,10 +94,6 @@ footer small {
 /* Responsive Design for Mobile Devices */
 @media (max-width: 600px) {
   html {
-    background: white;
-  }
-
-  html {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     background-size: 200% 200%;
   }
